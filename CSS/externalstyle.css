@@ -155,16 +155,86 @@ p:target{
 
 /* Grid */
 
-.gridone div{
+.gridone div,.gridtwo div,.gridthree div,.gridfour div{
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-.gridone{
+.gridone,.gridtwo,.gridthree,.gridfour{
     display: grid;
     grid-template-columns: auto auto auto;
+}
+
+.columnadd{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.rowadd{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.rowaddtwo{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gridfour{
     grid-gap: 20px;
     /* grid-row-gap: 5px; */
     /* grid-column-gap: 10px; */
+}
+
+.relative_parent{
+    border: 1px solid red;
+    width: 1000px;
+    height: 400px;
+}
+
+.relative_p{
+    border: 1px solid brown;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+.absolute_parent{
+    border: 1px solid red;
+    width: 1000px;
+    height: 400px;
+}
+
+.absolute_p{
+    border: 1px solid rgb(116, 165, 42);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+/* Font */
+
+.fontonline{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family: one;
+    src: url(static/Oswald-ExtraLight.ttf);
+}
+
+.fontoffline{
+    font-family: one;
 }
