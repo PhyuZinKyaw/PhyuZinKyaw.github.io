@@ -1,0 +1,235 @@
+@font-face {
+    font-family: font;
+    src: url(../font/NotoSans-MediumItalic.ttf);
+}
+
+*{
+    font-family: font;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navi Bar Start */
+
+.nav{
+    background-color: rgb(236, 241, 241);
+    /* box-shadow: 10px 10px 20px rgba(129, 127, 127, 0.5); */
+}
+/* .welcome_text{
+    margin-left: 60px;
+} */
+.logo{
+    margin-left: 80px;
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+}
+.navibar{
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+    margin-right: 45px;
+}
+.navibar li{
+    display: inline-block;
+    margin: 15px;
+}
+.navibar li a:hover{
+    color: red;
+}
+.navibar li a{
+    text-decoration: none;
+}
+.welcome_text{
+    color: red;
+}
+
+/* Background Images */
+.wallpaper{
+    width: 100%;
+}
+
+/* banner */
+.banner{
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    padding: 15px;
+    color: white;
+}
+.button_shop{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+}
+
+/* discount */
+.discount{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20px;
+    grid-gap: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.discount div{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 5px;
+}
+.discount div p{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.discount div p span{
+    color: gray;
+}
+
+/* promotion title*/
+.promotion_title{
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.promotionhr{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(214, 34, 178);
+    margin-left: 45px;
+}
+
+/* promotion items */
+.pomotion_img{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.promotion_item{
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+}
+.pomotion_img div img{
+    width: 80%;
+}
+.product_name{
+    text-align: center;
+}
+.promotion_discount{
+    position: absolute;
+    bottom: 380px;
+    left: 220px;
+}
+.discount_price{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.current_price{
+    color: red;
+    text-align: center;
+    width: 100%;
+    text-decoration: line-through;
+}
+
+/* New Arrival */
+.newarrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-gap: 40px;
+    margin-top: 15px;
+}
+.newarrival div{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .1);
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+.newarrival div img{
+    width: 70%;
+}
+.newarrival div span{
+    display: flex;
+    margin: 30px;
+}
+.firsthr{
+    width: 50%;
+    border: 2px solid red;
+    display: inline-block;
+}
+.secondhr{
+    width: 50%;
+    border: 2px solid green;
+    display: inline-block;
+}
+.new_price{
+    float: right;
+}
+.detail_btn{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    padding: 7px 15px;
+    color: red;
+    border-radius: 5px;
+    border: 1px solid red;
+    opacity: 0;
+}
+.detail_btn:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.newarrival div:hover .detail_btn{
+    opacity: 1;
+}
+.newarrival_img:hover{
+    opacity: .6;
+}
+
+/* start sub */
+.subscribe{
+    background-color: red;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 380px;
+    color: white;
+    border-radius: 5px;
+}
+.subscribe div{
+    padding-top: 50px;
+    margin-left: 40px;
+    float: left;
+    width: 60%;
+}
+.subscribe div p{
+    margin: 20px 0px 30px;
+}
+.subscribe_input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+}
+.subscribe_button{
+    width: 80px;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    background-color: green;
+    color: white;
+}
+.subscribe_img{
+    width: 320px;
+    margin-top: 30px;
+}
