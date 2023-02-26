@@ -1,0 +1,80 @@
+/* Navi Title */
+.nav_title{
+    margin-top: 15px;
+    margin-left: 500px;
+}
+.nav_title ul li{
+    display: inline-block;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    background-color: rgb(135, 135, 89);
+    padding: 18px;
+    
+}
+.nav_title ul li a{
+    text-decoration: none;
+}
+/* Men Fashion */
+.menhr{
+    width: 80px;
+    border: 2px solid red;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.men_title{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.men{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-gap: 40px;
+    margin-bottom: 20px;
+}
+.men div{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .1);
+    padding: 15px;
+    border-radius: 5px;
+}
+.men div img{
+    width: 100%;
+}
+
+/* men selector */
+.mainselectbox{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.selectbox{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.promotion_dis{
+    position: relative;
+    bottom: 368px;
+    left: 140px;
+    font-size: 12px;
+    font-style: italic;
+}
+.dis_price{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: 35%;
+    padding: 5px;
+    text-align: center;
+}
+.cur_price{
+    color: red;
+    text-align: center;
+    width: 35%;
+    text-decoration: line-through;
+}
+.men div p{
+    text-align: center;
+}

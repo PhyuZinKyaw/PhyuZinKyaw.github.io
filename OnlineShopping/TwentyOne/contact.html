@@ -16,10 +16,10 @@
         <img src="../images/logo.png" alt="" class="logo">
         <ul class="navibar">
             <li><a href="TwentyOne.html">Home</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">News</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="news.html">News</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="">Login</a></li>
             <li><a href="">Register</a></li>
         </ul>
@@ -27,34 +27,44 @@
     <!-- Contact -->
     <div class="contact">
         <div>
-            <h2>We love to hear from you!</h2>
+            <h2 class="contact_title">We love to hear from you!</h2>
             <p class="contact_p">Please share Feedback, Suggestions or Comments.</p>
-            <img src="../images/pexels-yaroslav-shuraev-4937768.jpg" alt="" class="contact_img">
+            <img src="../images/bb.jpg" alt="" class="contact_img">
         </div>
         
-        <div>
+        <div class="comment">
             <h2>Phone Sales / Support</h2>
-            <p><a href="" class="social"><i class="fa-brands fa-viber fa-2x"></i></a>+959-428273504</p>
+            <p><a href="" class="social"><i class="fa-brands fa-viber fa-2x"></i></a>+959-428273504</p><br>
             <h2>Get In Touch</h2>
-            <div>
-                <label for="name">Name*</label>
-                <input type="text" name="name" id="">
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="">
-            </div>
-            <div>
-                <label for="phone">Phone</label>
-                <input type="number" name="phone" id="">
-                <label for="about">About*</label>
-                <select name="about" id="">
-                    <option value="">Complain</option>
-                    <option value="">Suggesstion</option>
-                </select>
-            </div>
-            <div>
-                <label for="comment">Comment*</label>
-                <textarea name="comment" id="" cols="20" rows="5"></textarea>
-            </div>
+            <br>
+            <div class="comment_box">
+                <div>
+                    <label for="name">Name*</label><br>
+                    <input type="text" name="name" id="" placeholder="TwentyOne">
+                </div>
+                <div>
+                    <label for="email">Email*</label><br>
+                    <input type="email" name="email" id="" placeholder="abc@gmail.com">
+                </div>
+                <div>
+                    <label for="phone">Phone</label><br>
+                    <input type="text" name="phone" id="" placeholder="09123445566">
+                </div>
+                <div>
+                    <label for="about">About*</label><br>
+                    <select name="about" id="">
+                        <option value="">Complain</option>
+                        <option value="">Suggesstion</option>
+                    </select> 
+                </div>
+                 <div class="comment_text">
+                    <label for="commentbox">Comment*</label><br>
+                    <textarea name="" id="commentbox" cols="20" rows="5"></textarea>  
+                 </div>   
+                 <div class="comment_btn">
+                    <button class="send">Send</button>
+                 </div>         
+            </div>        
         </div>
     </div>
 
