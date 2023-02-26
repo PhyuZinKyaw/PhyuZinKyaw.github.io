@@ -12,7 +12,7 @@
 /* Navi Bar Start */
 
 .nav{
-    background-color: rgb(135, 135, 89);
+    background-color: rgb(227, 227, 217);
 }
 .logo{
     margin-left: 80px;
@@ -282,7 +282,7 @@
 /* footer */
 footer{
     /* background-color: black; */
-    background-color: rgb(135, 135, 89);
+    background-color: rgb(227, 227, 217);
     color: black;
     /* margin-top: 40px; */
 }
