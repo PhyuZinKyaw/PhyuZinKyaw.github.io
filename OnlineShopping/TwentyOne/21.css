@@ -364,6 +364,7 @@ footer{
     grid-template-columns: 280px 280px;
     grid-gap: 30px;
 }
+
 .comment_text{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -389,7 +390,15 @@ footer{
     padding: 8px;
     box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, .1);
 }
-#commentbox{
+.comment_box div select{
+    width: 260px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, .1);
+}
+.commentbox{
     border-radius: 8px;
     box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, .1);
     border: none;
