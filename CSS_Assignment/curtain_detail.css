@@ -1,0 +1,111 @@
+.title_text h2{
+    /* text-shadow: 0 0 1px #644c4c, 0 0 2px #9292d1; */
+    text-shadow: 0 0 2px #644c4c, 0 0 3px #0000FF;
+    margin-top: 35px;
+    margin-left: 580px;
+    display: inline-block;
+}
+.backtext{
+    float: right;
+    font-size: 18px;
+    margin-top: 35px;
+    text-shadow: 0 0 1px #644c4c, 0 0 2px #9292d1;
+    margin-right: 15px;
+}
+.curtain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 15px;
+}
+
+.curtain div img{
+    width: 100%;
+    margin-left: 10px;
+}
+.details{
+    margin-left: 40px;
+}
+
+.colorbtn{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 15px;
+    width: 300px;
+    height: 80px;
+}
+.colorbtn button:hover{
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, .2);
+}
+.b1{
+    background-color: red;
+    border: gray;
+}
+.b2{
+    background-color: green;
+    border: gray;
+}
+.b3{
+    background-color: blue;
+    border: gray;
+}
+.b4{
+    background-color: black;
+    border: gray;
+}
+.b5{
+    background-color: white;
+}
+.b6{
+    background-color: pink;
+    border: gray;
+}
+.b7{
+    background-color: purple;
+    border: gray;
+}
+.b8{
+    background-color: yellow;
+    border: gray;
+}
+.b9{
+    background-color: gray;
+    border-color: red;
+}
+.b10{
+    background-color: pink;
+    border: gray;
+}
+.sizebtn button{
+    width: 70px;
+    height: 30px;
+}
+.sizebtn button:hover{
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, .2);
+}
+.size{
+    border-color: red;
+}
+.list ul{
+    display: inline-block;
+}
+.orderbox{
+    border: 1px solid gray;
+    width: 300px;
+    height: 140px;
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 0 0 1px #644c4c, 0 0 2px #9292d1;
+    border-color: rgb(81, 71, 231);
+}
+.orderbtn{
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgb(102, 116, 223);
+    border-color: gray;
+}
+.orderbtn:hover{
+    background-color: rgb(81, 71, 231);
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, .2);
+    color: white;
+}
