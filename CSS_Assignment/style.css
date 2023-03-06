@@ -1,7 +1,7 @@
 /* Navi Bar */
 .navi_bar{
     display: grid;
-    grid-template-columns: 110px auto 350px;
+    grid-template-columns: 110px auto 280px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .navi_bar div ul li{
@@ -55,12 +55,11 @@ form.example button:hover {
 .navi_ul li{
     margin: 10px;
 }
-.navi_ul li span{
-    margin-left: 10px;    
-}
+
 .navi_ul li a{
     text-decoration: none;
 }
+
 
 /* background */
 .background div img{
@@ -108,9 +107,12 @@ form.example button:hover {
 }
 .shoptop div:hover{
     box-shadow: 0 12px 16px 0 rgba(48, 53, 194, 0.24), 0 17px 50px 0 rgba(59, 67, 214, 0.19);
+    color: black;
+    text-shadow: 0 0 2px #644c4c, 0 0 3px #0000FF;
 }
 .shoptop a{
     text-decoration: none;
+    /* color: rgb(33, 29, 113); */
 }
 .shoptop img{
     width: 95px;
@@ -128,8 +130,9 @@ form.example button:hover {
 .shopnew{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 13px;
-    margin: 20px;
+    grid-gap: 15px;
+    margin: 30px;
+    
 }
 .shopnew div{
     display: inline-block;
@@ -150,21 +153,23 @@ form.example button:hover {
     overflow: hidden;
     display: inline-block;
 }
-.shopnew div p a{
-    /* margin-left: 20px; */
+
+.shopnew div h2:hover{
     text-decoration: none;
-    font-size: 25px;
+    color: black;
+    text-shadow: 0 0 2px #644c4c, 0 0 3px #0000FF;
 }
-/* .shopnew div p a:hover{
-    color: gray;
-} */
+.shopnew div a{
+    text-decoration: none;
+}
+
 
 /* footer */
 .footer{
     display: grid;
     grid-template-columns: auto auto auto auto;
     background-color: rgb(195, 189, 189);
-    margin-top: 45px;
+    /* margin-top: 45px; */
 }
 .footer div{
     margin: 10px;
@@ -180,4 +185,44 @@ form.example button:hover {
 }
 .footer div ul li a:hover{
     color: gray;
+}
+
+/* About */
+.banner_about_text{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+    padding: 15px;
+    color: rgb(33, 29, 113);
+    border-radius: 5px;
+}
+.banner h1{
+    text-shadow: 1px 1px;
+}
+
+.about_paragraph div img{
+    width: 100%;
+}
+.about_paragraph{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 15px;
+}
+.about_paragraph_p{
+    margin-right: 20px;
+}
+.about_text{
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Contact */
+.contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 30px;
+}
+.comment div{
+    line-height: 40px;
 }

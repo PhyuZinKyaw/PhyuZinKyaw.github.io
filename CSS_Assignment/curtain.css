@@ -5,15 +5,6 @@
     display: inline-block;
     margin-left: 15px;
     margin-top: 30px;
-    display: inline-block;
-}
-
-.backtext{
-    float: right;
-    margin-top: 35px;
-    margin-right: 15px;
-    font-size: 18px;
-    text-shadow: 0 0 1px #644c4c, 0 0 2px #9292d1;
 }
 .curtain{
     display: grid;
@@ -26,6 +17,7 @@
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .2);
     padding: 15px;
     border-radius: 10px;
+    color: rgb(5, 27, 60);
 }
 .curtain div img{
     width: 240px;
@@ -40,13 +32,32 @@
     display: inline-block;
 }
 .image_hover p:hover{
-    color: #0000FF;
+    color: rgb(101, 105, 51);
 }
+.sale i{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+}
+.price{
+    display: inline-block;
+    font-size: 20px;
+}
+.sale{
+    float: right;
+    margin-right: 30px;
+}
+.sale:hover{
+    color: rgb(101, 105, 51);}
 
 /* pagination */
 .pagination {
     display: inline-block;
     margin-left: 500px;
+    margin-bottom: 20px;
   }
   
 .pagination a {

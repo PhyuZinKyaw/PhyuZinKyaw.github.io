@@ -20,33 +20,40 @@
 .sign_in
 {
     position: absolute;
-    top: 25%;
-    left: 35%;
+    top: 17%;
+    left: 33%;
     box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, .4);
+    background-color: whitesmoke;
     padding: 20px;
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 400px;
+    padding-left: 40px;
 }
 .sign_box input{
     width: 300px;
-    height: 35px;
+    height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
     background-color: rgb(185, 181, 181);
+    box-shadow: 3px 4px 3px 2px rgba(0, 0, 0, .4);
+    padding: 5px;
 }
+
 .continue{
-    width: 300px;
-    height: 35px;
-    background-color: rgb(160, 111, 111);
-    border: none;
+    width: 310px;
+    height: 40px;
+    background-color: #2a75af;
     border-radius: 5px;
-    color: black;
+    box-shadow: 3px 4px 3px 2px rgba(0, 0, 0, .4);
+    border: none;
 }
-.continue a{
-    text-decoration: none;
+.continue:hover{
+    color: white;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, .2);
 }
+
 .firsthr{
     width: 100px;
     display: inline-block;
@@ -56,13 +63,17 @@
     display: inline-block;
 }
 .new_account{
-    width: 300px;
-    height: 35px;
-    background-color: rgb(160, 111, 111);
-    border: none;
+    width: 310px;
+    height: 40px;
     border-radius: 5px;
-    color: black;
+    border-color: gray;
 }
 .new_account a{
     text-decoration: none;
+    color: black;
+}
+.new_account:hover{
+    color: white;
+    background-color: #2a75af;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, .2);
 }

@@ -236,7 +236,7 @@
 .news{
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 30px 50px 30px 50px;
+    /* margin: 30px 50px 30px 50px; */
     grid-gap: 30px;
 }
 .news div{
@@ -281,17 +281,15 @@
 
 /* footer */
 footer{
-    /* background-color: black; */
     background-color: rgb(227, 227, 217);
     color: black;
-    /* margin-top: 40px; */
 }
 .footer{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-top: 40px; */
+    /* padding-bottom: 40px; */
     display: grid;
     grid-template-columns: auto 200px 200px auto;
-    margin: 0px 80px;
+    /* margin: 0px 80px; */
     
 }
 .footer_title{
