@@ -19,12 +19,12 @@
 .register
 {
     position: absolute;
-    top: 16%;
+    top: 15%;
     left: 33%;
     box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, .4);
     padding: 20px;
-    width: 330px;
-    height: 450px;
+    width: 350px;
+    height: 470px;
     background-color: whitesmoke;
     padding-left: 40px;
 }

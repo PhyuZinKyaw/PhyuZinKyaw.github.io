@@ -83,12 +83,13 @@
 .orderbox{
     border: 1px solid gray;
     width: 300px;
-    height: 140px;
+    height: 200px;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     text-shadow: 0 0 1px #644c4c, 0 0 2px #9292d1;
     border-color: rgb(81, 71, 231);
 }
+
 .quatity{
     width: 80px;
     height: 35px;
