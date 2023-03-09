@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <h1>Three types of variable</h1>
+    <script>
+        var name="Phyu Zin Kyaw"; //global variable
+        document.write(name);
+        document.write('<br>');
+        var name="Phyu Zin Kyaw Update";
+        document.write(name);
+        document.write('<br>');
+
+        let fatherName="U Kyaw Lwin"; //block scope variable
+        document.write(fatherName);
+        document.write('<br>');
+
+        const motherName="Daw Aye Aye Mar"; //const variable
+        document.write(motherName);
+        document.write('<br>');
+
+        const num=2;
+        if(num){
+            var num1=2;
+            let num2=3;
+            document.write(num2);
+        }
+        document.write(num1);
+        
+        //string data type
+        //let name="Phyu Zin Kyaw"
+        //let name=`Phyu Zin Kyaw`
+        let datatype_name='Phyu Zin Kyaw';
+        console.log(datatype_name);
+        console.log(typeof(datatype_name));
+
+        //numeric data type
+        let datatype_num=26;
+        console.log(datatype_num);
+        console.log(typeof(datatype_num));
+
+        //boolean data type
+        let datatype_boolean=true;
+        console.log(datatype_boolean);
+        console.log(typeof(datatype_boolean));
+
+        //undefined
+        let datatype_undefined;
+        console.log(datatype_undefined);
+        console.log(typeof(datatype_undefined));
+
+        //null
+        let datatype_null=null;
+        console.log(datatype_null);
+        console.log(typeof(datatype_null));
+         
+        //array
+        let arr1=new Array('a','b','c',1,2,3);
+        console.log(arr1);
+        console.log(arr1[0]);
+
+        let arr2=['a','b','c',1,2,3];
+        console.log(arr2);
+        console.log(arr2[1]);
+
+        let multiArray=['Mg Mg','Hla Hla',['Aung Aung','Phyu Phyu'],'Aye Aye'];
+        console.log(multiArray);
+        console.log(multiArray[2][0]);
+
+        //object
+        let car={
+            name:'Honda Fix',
+            color:['White','Red'],
+            price:350000000,
+            qty:2
+        }
+        console.log(car);
+        console.log(car.name);
+        console.log(car.color[1]);
+
+        //assign operator
+        let name1='Phyu Zin Kyaw';
+
+        //Addition operator
+        let three=2+1;
+        console.log(three);
+
+        //Substraction Operator
+        let four=3-1;
+        console.log(four);
+
+        //Division Operator
+        let div=20/5;
+        console.log(div);
+        let div1=20/3;
+        console.log(div1);
+        console.log(div1.toFixed(3));
+
+        //Remainder Operator
+        let rem1=20%5;
+        console.log(rem1);
+        let rem2=1%0;
+        console.log(rem2);
+
+        //Multiplication Operator
+        let mul=2*4;
+        console.log(mul);
+
+        //Exponentation
+        let exp=16**4;
+        console.log(exp);
+
+        //Precendence
+        let total=1*2+5/2%2;
+        console.log(total);
+
+        //Comparison
+        let p=12;
+        let m='12';
+        if(p>m)
+        {
+            //code
+        }
+        
+        console.log(p<m);
+        console.log(p<=m);
+        console.log(p>m);
+        console.log(p>=m);
+        console.log(p==m);
+        console.log(p===m);//value & data type
+        console.log(p!=m);
+        console.log(p!==m);//value & data type
+
+        //Logical
+        //&& AND
+        //|| OR
+        //! NOT
+
+        if(12<30 && 23>15){
+            document.write('<br>');
+            document.write('AND Logical Operator');
+            document.write('<br>');
+        }
+        if(12<30 || 23>15){
+            document.write('OR Logical Operator')
+            document.write('<br>');
+        }
+        let logicalnum;
+        if(!logicalnum){
+            document.write('NOT Logical Operator');
+            document.write('<br>');
+        }
+        //IF Condition
+        if(true){
+            //code
+        }
+        // let number=prompt('Enter a number');
+        // document.write(number);
+        // document.write('<br>');
+        // if(number<100){
+        //     document.write('Your number is less than 100');
+        // }else if(number>100 && number<500){
+        //     document.write('Your number is greater than 100 and smaller than 500');
+        // }else if(number>500){
+        //     document.write('Your number is greater than 500');
+        // }else{
+        //     document.write('None of these');
+        // }
+
+        //if else condition
+        let numevenoff=prompt('Enter a number');
+        let even=numevenoff%2;
+        document.write(even);
+        document.write('<br>');
+
+        let odd=numevenoff%2;
+        document.write(odd);
+        document.write('<br>');
+
+        let string=typeof(numevenoff);
+        document.write(string);
+
+        if(even==0)
+        {
+            document.write('Your number is even');
+        }else if(odd!=0)
+        {
+            document.write('Your number is odd');
+        }else if(string)
+        {
+            document.write('None of these');
+        }
+
+    </script>
+</body>
+</html>
