@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let fruits=['Apple','Orange','Banana'];
+        console.log(fruits);
+
+        fruits.push('Mango');
+        console.log(fruits);
+
+        fruits.pop();
+        console.log(fruits);
+
+        fruits.unshift('Cherry');
+        console.log(fruits);
+
+        fruits.shift();
+        console.log(fruits);
+
+        let students=['Mg Mg','Aung Aung','Hla Hla','Tun Tun'];
+        console.log(students);
+
+        students.sort();
+        console.log(students);
+
+        students.reverse();
+        console.log(students);
+
+        let students_string=students.toString();
+        console.log(students_string);
+
+        let students_arr=students_string.split(',');
+        console.log(students_arr);
+
+        let name='Hla,Mya,Aung,Nyo';
+        console.log(name.split(','));
+
+        let arr1=[1,2,3];
+        let arr2=[4,5,6];
+        let arr4=[7,8,9];
+        let arr3=arr1.concat(arr2);
+        console.log(arr3);
+
+        let arr5=[...arr1,...arr2,...arr4];
+        console.log(arr5);
+
+    </script>
+</body>
+</html>

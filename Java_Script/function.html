@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+        function fullName(){
+            document.write(`<h1>Hello Nameing Function</h1>`);
+        }
+        fullName();
+        function sum(num1,num2){
+            let total=num1+num2;
+            document.write(total);
+            document.write(`<br>`);
+        }
+        sum(3,5);
+        sum(30,50);
+        sum(300,500);
+        function sub(num1=100,num2=50){
+            let result=num1-num2;
+            document.write(result);
+            document.write(`<br>`);
+        }
+        sub();
+        sub(200,60);
+        function multi(num1,num2){
+            let result=num1*num2;
+            document.write(result);
+            document.write(`<br>`);
+            return result;
+        }
+        let multiResult=multi(5,6);
+        document.write(multiResult);
+    </script>
+</body>
+</html>
