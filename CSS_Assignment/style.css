@@ -1,9 +1,13 @@
 /* Navi Bar */
 .navi_bar{
     display: grid;
-    grid-template-columns: 110px auto 280px;
+    grid-template-columns: 100px 650px 760px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+/* .navi_bar div{
+    border: 1px solid gray;
+
+} */
 .navi_bar div ul li{
     display: inline-block;
 }
@@ -17,8 +21,8 @@
 /* search box */
 .searchbox{
     box-sizing: border-box;
-    margin-left: 200px;
-    margin-top: 15px;
+    margin-left: 100px;
+    margin-top: 18px;
 }
 
 form.example input[type=text] {
@@ -48,7 +52,7 @@ form.example button:hover {
 }
 
 .navi_ul{
-    margin-top: 25px;
+    margin-top: 18px;
 }
 
 /* Navi Right Bar */
@@ -82,7 +86,7 @@ form.example button:hover {
 /* Shop Top Categories */
 .shoptext{
     color: black;
-    text-shadow: 0 0 2px #644c4c, 0 0 3px #0000FF;
+    text-shadow: 0 0 1px #644c4c, 0 0 1px #0000FF;
     margin-left: 15px;
     margin-top: 38px;
 }
@@ -108,7 +112,7 @@ form.example button:hover {
 .shoptop div:hover{
     box-shadow: 0 12px 16px 0 rgba(48, 53, 194, 0.24), 0 17px 50px 0 rgba(59, 67, 214, 0.19);
     color: black;
-    text-shadow: 0 0 2px #644c4c, 0 0 3px #0000FF;
+    text-shadow: 0 0 1px #644c4c, 0 0 1px #00aeff;
 }
 .shoptop a{
     text-decoration: none;
