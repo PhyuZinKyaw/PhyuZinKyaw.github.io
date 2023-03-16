@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    <script>
+        //while
+        // let num=prompt('Enter a number');
+        // while(num>=100){
+        //     document.write(`<h1>Your Number is ${num}`);
+        //     num-=5;
+        // }
+
+        //do while
+        // let no=10;
+        // do{
+        //     document.write(`<h1> Your Number is ${no}`);
+        //         no++;
+        // }while(no<20);
+            let secrectNo=7;
+            let guess=prompt('Enter a Number Between 1 to 10');
+            let count=0;
+            while(secrectNo!=guess){
+                if(guess<secrectNo){
+                    alert('Lower,Try again!');
+                }else{
+                    alert('Higher,Try again!');
+                }
+                guess=prompt('Enter a number between 1 to 10');
+                count++;
+            }
+            document.write('Correct!<br>');
+            document.write('Your try time is '+count);
+    </script>
+</body>
+</html>
