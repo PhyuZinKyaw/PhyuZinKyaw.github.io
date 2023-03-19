@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /* Popular Now */
+.popularproduct{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+  }
+.popularimg{
+      width: 350px;
+      height: 350px;
+      position: relative;	
+      overflow: hidden;
+  }
+  .popularproduct div img {
+    width: 100%;
+    padding-top: 20px;
+}
+  .img1:hover {
+    position: absolute;
+    transition: .4s;
+    transform: scale(1);
+    z-index: 2;
+  }
+  .img2 {
+    filter: blur(100px);
+    opacity: 1;
+    transition: .4s;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+    </style>
+</head>
+<body>
+    <!-- Popular Now -->
+    <h2 class="shoptext">Popular Now</h2>
+    <hr class="shoptophr">
+
+    <div class="popularproduct">
+        <a href="">
+            <div class="popularimg">
+                <img src="images/popular/p15.jpg" alt="" class="img1">
+                <img src="images/popular/p16.jpg" alt="" class="img2">
+            </div>
+        </a>
+        <a href="">
+            <div class="popularimg">
+                <img src="images/popular/p3.jpg" alt="" class="img1">
+                <img src="images/popular/p4.jpg" alt="" class="img2">
+            </div>
+        </a>
+        <a href="">
+            <div class="popularimg">
+                <img src="images/popular/p5.jpg" alt="" class="img1">
+                <img src="images/popular/p6.jpg" alt="" class="img2">
+            </div>
+        </a>
+        <a href="">
+            <div class="popularimg">
+                <img src="images/popular/p7.jpg" alt="" class="img1">
+                <img src="images/popular/p8.jpg" alt="" class="img2">
+            </div>
+        </a>
+        <!-- <a href="">
+            <div class="popularimg">
+                <img src="images/popular/p9.jpg" alt="" class="img1">
+                <img src="images/popular/p10.jpg" alt="" class="img2">
+            </div>
+        </a>
+        <a href="">
+            <div class="popularimg">
+                <img src="images/popular/p11.jpg" alt="" class="img1">
+                <img src="images/popular/p12.jpg" alt="" class="img2">
+            </div>
+        </a> -->
+
+    </div>
+</body>
+</html>
