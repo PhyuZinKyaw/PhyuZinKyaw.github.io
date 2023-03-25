@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body onload="big()">
+    <h1>Event Property</h1>
+
+    <img src="laptop.webp" id="myImage" alt="" width="500px" height="300px" onmouseover="big()" onmouseleave="normal()">
+    <br>
+    <br>
+    <input type="text" onkeyup="sayHi()" id="myInput">
+    <p id="result"></p>
+
+    <script>
+        function big(){
+            document.getElementById('myImage').style.width='1000px';
+            document.getElementById('myImage').style.height='600px';
+        }
+        function normal(){
+            document.getElementById('myImage').style.width='500px';
+            document.getElementById('myImage').style.height='300px';
+        }
+        function sayHi(){
+            let res=document.getElementById('myInput').value;
+            document.getElementById('result').innerHTML=res;
+        }
+    </script>
+</body>
+</html>
