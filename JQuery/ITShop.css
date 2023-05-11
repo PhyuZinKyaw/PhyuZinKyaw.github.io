@@ -1,0 +1,28 @@
+.titleText{
+    display: inline-block;
+    margin-left: 30px;
+}
+.titleIcon{
+    float: right;
+    margin-right: 50px;
+}
+
+nav{
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, .1);
+    background-color: white;
+}
+
+.guide{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    width: 85%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.guide div{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 5px;
+}

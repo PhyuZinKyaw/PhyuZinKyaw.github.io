@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="ITShop.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="fontawesome/js/all.js"></script>
+</head>
+<body>
+    <nav>
+        <h2 class="titleText"><a href="ITShop.html"> IT Shop</a></h2>
+        <p class="titleIcon"><a href="ITShop.html">Home</a> <a href=""> <i class="fa-solid fa-cart-shopping fa-cart-shopping"></i><span id="count_number"></span></a> </p>
+    </nav>
+    <br>
+    <table border="1" cellspacing="0" cellpadding="25">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Item Qty</th>
+                <th>SubTotal</th>
+            </tr>
+        </thead>
+        <tbody id="item_body">
+
+        </tbody>
+    </table>
+
+    <br>
+
+    <button id="order">Order</button>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            getData();
+
+            function getData(){
+                let shopString=localStorage.getItem('shops');
+                if(shopString){
+                    let shopArray=JSON.parse(shopString);
+
+                    let data='';
+                    let no=1;
+                    let total=0;
+                    $.each(shopArray,function(i,v){
+                        data+=`
+                        <tr>
+                            <td>${no++}</td>
+                            <td>${v.name}</td>
+                            <td>${v.price}</td>
+                            <td><button class='min' data-index="${i}"> - </button>${v.qty}<button class='max' data-index="${i}"> + </button></td>   
+                            <td>${v.price*v.qty}</td>
+                        </tr>
+                        `;
+                        total +=v.price*v.qty;
+                    })
+
+                    data+=`
+                    <tr>
+                        <td colspan='4'>Total</td>
+                        <td>${total}MMK</td>
+                    </tr>
+                    `;
+                    $('#item_body').html(data);
+                }
+            }
+
+            $('#item_body').on('click','.min',function(){
+                let index=$(this).data('index');
+                //console.log(index);
+
+                let shopString=localStorage.getItem('shops');
+                if(shopString){
+                    let shopArray=JSON.parse(shopString);
+
+                    $.each(shopArray,function(i,v){
+                        if(index==i)
+                        {
+                            v.qty--;
+                            if(v.qty==0)
+                            {
+                                shopArray.splice(index,1);
+                            }
+                        }
+                    })
+
+                    let shopData=JSON.stringify(shopArray);
+                    localStorage.setItem('shops',shopData);
+
+                    getData();
+                }
+            })
+
+            $('#item_body').on('click','.max',function(){
+                let index=$(this).data('index');
+                //console.log(index);
+
+                let shopString=localStorage.getItem('shops');
+                if(shopString){
+                    let shopArray=JSON.parse(shopString);
+
+                    $.each(shopArray,function(i,v){
+                        if(index==i)
+                        {
+                            v.qty++;
+                        }
+                    })
+
+                    let shopData=JSON.stringify(shopArray);
+                    localStorage.setItem('shops',shopData);
+
+                    getData();
+                }
+            })
+
+            $('#order').click(function(){
+                let ans=confirm('Are you sure Order?');
+                if(ans){
+                    localStorage.clear();
+                    window.location.href="ITShop.html";
+                }
+            })
+
+        })
+    </script>
+</body>
+</html>

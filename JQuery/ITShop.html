@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Shop</title>
+
+    <link rel="stylesheet" href="ITShop.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="fontawesome/js/all.js"></script>
+</head>
+<body>
+    <nav>
+        <h2 class="titleText">IT Shop</h2>
+        <p class="titleIcon">Home <a href="checkout.html"> <i class="fa-solid fa-cart-shopping fa-cart-shopping"></i><span id="count_number"></span></a> </p>
+    </nav>
+    <br>
+
+    <div class="guide">
+        <div>
+            <img src="images/laptop1.jpg" alt="">
+            <h3>Laptop 1</h3>
+            <p>Price : 2300000MMK</p>
+            <button class="addToCart" data-id="1" data-name="Laptop 1" data-price="2300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/laptop2.jpg" alt="">
+            <h3>Laptop 2</h3>
+            <p>Price : 2300000MMK</p>
+            <button class="addToCart" data-id="2" data-name="Laptop 2" data-price="2300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/laptop3.jpg" alt="">
+            <h3>Laptop 3</h3>
+            <p>Price : 2300000MMK</p>
+            <button class="addToCart" data-id="3" data-name="Laptop 3" data-price="2300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/laptop4.png" alt="">
+            <h3>Laptop 4</h3>
+            <p>Price : 2300000MMK</p>
+            <button class="addToCart" data-id="4" data-name="Laptop 4" data-price="2300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/phone1.png" alt="">
+            <h3>iPhone 1</h3>
+            <p>Price : 2300000MMK</p>
+            <button>Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/phone2.png" alt="">
+            <h3>iPhone 2</h3>
+            <p>Price : 2300000MMK</p>
+            <button>Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/phone3.png" alt="">
+            <h3>iPhone 3</h3>
+            <p>Price : 2300000MMK</p>
+            <button>Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/phone4.jpg" alt="">
+            <h3>iPhone 4</h3>
+            <p>Price : 2300000MMK</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            count();
+
+            function count(){
+                    let shopString=localStorage.getItem('shops');
+                    if(shopString)
+                    {
+                        let shopArray=JSON.parse(shopString);
+                        $('#count_number').text(shopArray.length);
+                    }
+                    else
+                    {
+                        $('#count_number').text('0');
+                    }
+                }
+
+            $(".addToCart").click(function(){
+                let item_id=$(this).data('id');
+                let item_name=$(this).data('name');
+                let item_price=$(this).data('price');
+
+                console.log(item_id,item_name,item_price);
+
+                let shop_items={
+                    id : item_id,
+                    name : item_name,
+                    price : item_price,
+                    qty : 1
+                }
+
+                console.log(shop_items);
+
+                let shopString=localStorage.getItem('shops');
+                let shopArray;
+
+                if(shopString==null)
+                {
+                    shopArray=[];
+                }
+                else{
+                    shopArray=JSON.parse(shopString);
+                }
+
+                let status=false;
+                $.each(shopArray,function(i,v){
+                    if(item_id==v.id){
+                        status=true;
+                        v.qty++;
+                    }
+                })
+                if(status==false){
+                    shopArray.push(shop_items);
+                }
+
+                let shopData=JSON.stringify(shopArray);
+                localStorage.setItem('shops',shopData);
+
+                count();
+
+            })
+        })
+    </script>
+</body>
+</html>

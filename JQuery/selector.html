@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>jQuery Selector</h1>
+    <button id="click">Click</button>
+
+    <p class="p-tag">jQuery is Easy.</p>
+    <p class="p-tag">jQuey is funny.</p>
+    <p class="p-tag">jQuery is lessweight.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        //jQuery Syntax
+
+        $(document).ready(function(){
+
+            $('#click').click(function(){
+                alert('Hello Clicker');
+            });
+
+            $('#hide').click(function(){
+                $('.p-tag').hide('slow');
+                $('#click').hide();
+                $('h1').hide();
+            })
+
+            $('#show').click(function(){
+                $('.p-tag').show('slow');
+                $('#click').show();
+                $('h1').show();
+            })
+
+        })
+
+    </script>
+</body>
+</html>
