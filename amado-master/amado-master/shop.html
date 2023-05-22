@@ -17,6 +17,9 @@
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="fontawesome/js/all.js"></script>
+
 
 </head>
 
@@ -64,35 +67,41 @@
             </div>
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <a href="index.html"><img src="img/Capture.png" alt=""></a>
             </div>
             <!-- Amado Nav -->
-            <nav class="amado-nav">
+            <nav class="amado-nav mb-3">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-magnifying-glass mx-1"></i>SEARCH</a></li>
+                    <li><a href="cart.html"><i class="fa-regular fa-user mx-1"></i>LOGIN</a></li>
+                    <li class="active"><a href="index.html"><i class="fa-solid fa-house mx-1"></i>Home</a></li>
+                    <li><a href="shop.html"><i class="fa-brands fa-shopify mx-1"></i>Shop</a></li>
                     <li><a href="product-details.html">Product</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping mx-1"></i>Cart</a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-check mx-1"></i>Checkout</a></li>
                 </ul>
             </nav>
             <!-- Button Group -->
-            <div class="amado-btn-group mt-30 mb-100">
-                <a href="#" class="btn amado-btn mb-15">%Discount%</a>
-                <a href="#" class="btn amado-btn active">New this week</a>
+            <div class="amado-btn-group mb-5">
+                <a href="#" class="btn amado-btn mb-15 rounded">%Discount%</a>
+                <a href="#" class="btn amado-btn active rounded">New Arrival</a>
             </div>
             <!-- Cart Menu -->
-            <div class="cart-fav-search mb-100">
+            <div class="cart-fav-search">
                 <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
                 <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
                 <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
             </div>
             <!-- Social Button -->
             <div class="social-info d-flex justify-content-between">
-                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <!-- <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a> -->
+                <!-- <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> -->
+                <a href="#"><i class="fa-brands fa-viber fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <!-- <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> -->
+                <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
             </div>
         </header>
         <!-- Header Area End -->
@@ -107,13 +116,14 @@
                 <!--  Catagories  -->
                 <div class="catagories-menu">
                     <ul>
-                        <li class="active"><a href="#">Chairs</a></li>
-                        <li><a href="#">Beds</a></li>
-                        <li><a href="#">Accesories</a></li>
-                        <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Home Deco</a></li>
-                        <li><a href="#">Dressings</a></li>
-                        <li><a href="#">Tables</a></li>
+                        <li class="active"><a href="#">Headband</a></li>
+                        <li><a href="#">Necklace</a></li>
+                        <li><a href="#">Bracelet</a></li>
+                        <li><a href="#">Anklet Bracelet</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Hair Clip</a></li>
+                        <li><a href="#">Earring</a></li>
+                        <li><a href="#">Ring</a></li>
                     </ul>
                 </div>
             </div>
@@ -178,7 +188,7 @@
 
                 <div class="widget-desc">
                     <div class="slider-range">
-                        <div data-min="10" data-max="1000" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="10" data-value-max="1000" data-label-result="">
+                        <div data-min="10" data-max="500" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="10" data-value-max="400" data-label-result="">
                             <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
                             <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
                             <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
@@ -197,34 +207,19 @@
                         <div class="product-topbar d-xl-flex align-items-end justify-content-between">
                             <!-- Total Products -->
                             <div class="total-products">
-                                <p>Showing 1-8 0f 25</p>
-                                <div class="view d-flex">
+                                <!-- <div class="view d-flex">
                                     <a href="#"><i class="fa fa-th-large" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                                </div>
+                                </div> -->
+                                <h5 class="text-warning font-italic">Warmly Welcome From TwentyOne Fancy Accessories</h5>
                             </div>
                             <!-- Sorting -->
                             <div class="product-sorting d-flex">
-                                <div class="sort-by-date d-flex align-items-center mr-15">
-                                    <p>Sort by</p>
-                                    <form action="#" method="get">
-                                        <select name="select" id="sortBydate">
-                                            <option value="value">Date</option>
-                                            <option value="value">Newest</option>
-                                            <option value="value">Popular</option>
-                                        </select>
-                                    </form>
+                                <div class="sort-by-date d-flex align-items-center mr-50">
+                                    <a href="cart.html" class="cart-nav"><h6><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></h6></a>
                                 </div>
-                                <div class="view-product d-flex align-items-center">
-                                    <p>View</p>
-                                    <form action="#" method="get">
-                                        <select name="select" id="viewProduct">
-                                            <option value="value">12</option>
-                                            <option value="value">24</option>
-                                            <option value="value">48</option>
-                                            <option value="value">96</option>
-                                        </select>
-                                    </form>
+                                <div class="view-product d-flex align-items-center mr-50">
+                                    <a href="checkout.html"><h6><i class="fa-solid fa-check mx-1"></i>Checkout</h6></a>
                                 </div>
                             </div>
                         </div>
@@ -234,13 +229,13 @@
                 <div class="row">
 
                     <!-- Single Product Area -->
-                    <div class="col-12 col-sm-6 col-md-12 col-xl-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product1.jpg" alt="">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h1.png" alt="" class="zoom"></a>
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product2.jpg" alt="">
+                                <!-- <img class="hover-img" src="img/product-img/product2.jpg" alt=""> -->
                             </div>
 
                             <!-- Product Description -->
@@ -248,9 +243,9 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
+                                    <p class="product-price">$23</p>
                                     <a href="product-details.html">
-                                        <h6>Modern Chair</h6>
+                                        <h6>Gold Small Chain</h6>
                                     </a>
                                 </div>
                                 <!-- Ratings & Cart -->
@@ -271,13 +266,13 @@
                     </div>
 
                     <!-- Single Product Area -->
-                    <div class="col-12 col-sm-6 col-md-12 col-xl-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product2.jpg" alt="">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h2.png" alt="" class="zoom"></a>
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product3.jpg" alt="">
+                                <!-- <img class="hover-img" src="img/product-img/product3.jpg" alt=""> -->
                             </div>
 
                             <!-- Product Description -->
@@ -285,9 +280,9 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
+                                    <p class="product-price">$50</p>
                                     <a href="product-details.html">
-                                        <h6>Modern Chair</h6>
+                                        <h6>Bride Wedding Chain</h6>
                                     </a>
                                 </div>
                                 <!-- Ratings & Cart -->
@@ -308,13 +303,13 @@
                     </div>
 
                     <!-- Single Product Area -->
-                    <div class="col-12 col-sm-6 col-md-12 col-xl-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product3.jpg" alt="">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h3.png" alt="" class="zoom"></a>
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product4.jpg" alt="">
+                                <!-- <img class="hover-img" src="img/product-img/product4.jpg" alt=""> -->
                             </div>
 
                             <!-- Product Description -->
@@ -322,9 +317,9 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
+                                    <p class="product-price">$35</p>
                                     <a href="product-details.html">
-                                        <h6>Modern Chair</h6>
+                                        <h6>Black Big Pearl</h6>
                                     </a>
                                 </div>
                                 <!-- Ratings & Cart -->
@@ -345,13 +340,13 @@
                     </div>
 
                     <!-- Single Product Area -->
-                    <div class="col-12 col-sm-6 col-md-12 col-xl-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product4.jpg" alt="">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h4.png" alt="" class="zoom"></a>
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product5.jpg" alt="">
+                                <!-- <img class="hover-img" src="img/product-img/product5.jpg" alt=""> -->
                             </div>
 
                             <!-- Product Description -->
@@ -359,9 +354,9 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
+                                    <p class="product-price">$100</p>
                                     <a href="product-details.html">
-                                        <h6>Modern Chair</h6>
+                                        <h6>Gold Flower with Pearl</h6>
                                     </a>
                                 </div>
                                 <!-- Ratings & Cart -->
@@ -382,13 +377,13 @@
                     </div>
 
                     <!-- Single Product Area -->
-                    <div class="col-12 col-sm-6 col-md-12 col-xl-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product5.jpg" alt="">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h5.png" alt="" class="zoom"></a>
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product6.jpg" alt="">
+                                <!-- <img class="hover-img" src="img/product-img/product6.jpg" alt=""> -->
                             </div>
 
                             <!-- Product Description -->
@@ -398,7 +393,7 @@
                                     <div class="line"></div>
                                     <p class="product-price">$180</p>
                                     <a href="product-details.html">
-                                        <h6>Modern Chair</h6>
+                                        <h6>Flower Wedding Chain</h6>
                                     </a>
                                 </div>
                                 <!-- Ratings & Cart -->
@@ -419,13 +414,13 @@
                     </div>
 
                     <!-- Single Product Area -->
-                    <div class="col-12 col-sm-6 col-md-12 col-xl-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product6.jpg" alt="">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h6.png" alt="" class="zoom"></a>
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product1.jpg" alt="">
+                                <!-- <img class="hover-img" src="img/product-img/product1.jpg" alt=""> -->
                             </div>
 
                             <!-- Product Description -->
@@ -433,9 +428,9 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
+                                    <p class="product-price">$50</p>
                                     <a href="product-details.html">
-                                        <h6>Modern Chair</h6>
+                                        <h6>Crystal Wedding Chain</h6>
                                     </a>
                                 </div>
                                 <!-- Ratings & Cart -->
@@ -454,17 +449,242 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                        <div class="single-product-wrapper">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h7.png" alt="" class="zoom"></a>
+                                <!-- Hover Thumb -->
+                                <!-- <img class="hover-img" src="img/product-img/product1.jpg" alt=""> -->
+                            </div>
+
+                            <!-- Product Description -->
+                            <div class="product-description d-flex align-items-center justify-content-between">
+                                <!-- Product Meta Data -->
+                                <div class="product-meta-data">
+                                    <div class="line"></div>
+                                    <p class="product-price">$45</p>
+                                    <a href="product-details.html">
+                                        <h6>Molans New Flower Hair Band</h6>
+                                    </a>
+                                </div>
+                                <!-- Ratings & Cart -->
+                                <div class="ratings-cart text-right">
+                                    <div class="ratings">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                        <div class="single-product-wrapper">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h8.png" alt="" class="zoom"></a>
+                                <!-- Hover Thumb -->
+                                <!-- <img class="hover-img" src="img/product-img/product1.jpg" alt=""> -->
+                            </div>
+
+                            <!-- Product Description -->
+                            <div class="product-description d-flex align-items-center justify-content-between">
+                                <!-- Product Meta Data -->
+                                <div class="product-meta-data">
+                                    <div class="line"></div>
+                                    <p class="product-price">$45</p>
+                                    <a href="product-details.html">
+                                        <h6>MIAOHY Wedding Crystal Bridal</h6>
+                                    </a>
+                                </div>
+                                <!-- Ratings & Cart -->
+                                <div class="ratings-cart text-right">
+                                    <div class="ratings">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Single Product Area -->
+                     <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                        <div class="single-product-wrapper">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h9.png" alt="" class="zoom"></a>
+                                <!-- Hover Thumb -->
+                                <!-- <img class="hover-img" src="img/product-img/product1.jpg" alt=""> -->
+                            </div>
+
+                            <!-- Product Description -->
+                            <div class="product-description d-flex align-items-center justify-content-between">
+                                <!-- Product Meta Data -->
+                                <div class="product-meta-data">
+                                    <div class="line"></div>
+                                    <p class="product-price">$50</p>
+                                    <a href="product-details.html">
+                                        <h6>MIAOHY Wedding Crystal Bridal</h6>
+                                    </a>
+                                </div>
+                                <!-- Ratings & Cart -->
+                                <div class="ratings-cart text-right">
+                                    <div class="ratings">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                        <div class="single-product-wrapper">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h10.png" alt="" class="zoom"></a>
+                                <!-- Hover Thumb -->
+                                <!-- <img class="hover-img" src="img/product-img/product1.jpg" alt=""> -->
+                            </div>
+
+                            <!-- Product Description -->
+                            <div class="product-description d-flex align-items-center justify-content-between">
+                                <!-- Product Meta Data -->
+                                <div class="product-meta-data">
+                                    <div class="line"></div>
+                                    <p class="product-price">$20</p>
+                                    <a href="product-details.html">
+                                        <h6>White Pure Silk</h6>
+                                    </a>
+                                </div>
+                                <!-- Ratings & Cart -->
+                                <div class="ratings-cart text-right">
+                                    <div class="ratings">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                        <div class="single-product-wrapper">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h12.png" alt="" class="zoom"></a>
+                                <!-- Hover Thumb -->
+                                <!-- <img class="hover-img" src="img/product-img/product1.jpg" alt=""> -->
+                            </div>
+
+                            <!-- Product Description -->
+                            <div class="product-description d-flex align-items-center justify-content-between">
+                                <!-- Product Meta Data -->
+                                <div class="product-meta-data">
+                                    <div class="line"></div>
+                                    <p class="product-price">$90</p>
+                                    <a href="product-details.html">
+                                        <h6>Disney Pearl Band</h6>
+                                    </a>
+                                </div>
+                                <!-- Ratings & Cart -->
+                                <div class="ratings-cart text-right">
+                                    <div class="ratings">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                        <div class="single-product-wrapper">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="" class="hover-zoom"><img src="img/bg-img/best seller/shop head/h11.png" alt="" class="zoom"></a>
+                                <!-- Hover Thumb -->
+                                <!-- <img class="hover-img" src="img/product-img/product1.jpg" alt=""> -->
+                            </div>
+
+                            <!-- Product Description -->
+                            <div class="product-description d-flex align-items-center justify-content-between">
+                                <!-- Product Meta Data -->
+                                <div class="product-meta-data">
+                                    <div class="line"></div>
+                                    <p class="product-price">$35</p>
+                                    <a href="product-details.html">
+                                        <h6>Colourful Silk</h6>
+                                    </a>
+                                </div>
+                                <!-- Ratings & Cart -->
+                                <div class="ratings-cart text-right">
+                                    <div class="ratings">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="row">
                     <div class="col-12">
                         <!-- Pagination -->
                         <nav aria-label="navigation">
-                            <ul class="pagination justify-content-end mt-50">
+                            <ul class="pagination justify-content-center mt-10">
+                                <li class="page-item"><a class="page-link" href="#"><</a></li>
                                 <li class="page-item active"><a class="page-link" href="#">01.</a></li>
                                 <li class="page-item"><a class="page-link" href="#">02.</a></li>
                                 <li class="page-item"><a class="page-link" href="#">03.</a></li>
                                 <li class="page-item"><a class="page-link" href="#">04.</a></li>
+                                <li class="page-item"><a class="page-link" href="#">></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -473,31 +693,6 @@
         </div>
     </div>
     <!-- ##### Main Content Wrapper End ##### -->
-
-    <!-- ##### Newsletter Area Start ##### -->
-    <section class="newsletter-area section-padding-100-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Newsletter Text -->
-                <div class="col-12 col-lg-6 col-xl-7">
-                    <div class="newsletter-text mb-100">
-                        <h2>Subscribe for a <span>25% Discount</span></h2>
-                        <p>Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. Donec auctor interdum purus, ac finibus massa bibendum nec.</p>
-                    </div>
-                </div>
-                <!-- Newsletter Form -->
-                <div class="col-12 col-lg-6 col-xl-5">
-                    <div class="newsletter-form mb-100">
-                        <form action="#" method="post">
-                            <input type="email" name="email" class="nl-email" placeholder="Your E-mail">
-                            <input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Newsletter Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer_area clearfix">
