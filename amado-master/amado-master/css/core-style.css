@@ -152,11 +152,11 @@ img {
 
 /* Section Padding */
 .section-padding-100 {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 100px; }
 
 .section-padding-100-0 {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 0; }
 
 .section-padding-0-100 {
@@ -341,7 +341,7 @@ img {
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 260px;
+  height: 230px;
   z-index: 5000;
   top: -350px;
   left: 0;
@@ -461,7 +461,7 @@ img {
       .main-content-wrapper .header-area .nav-close:hover {
         background-color: #131212; }
     .main-content-wrapper .header-area .logo {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       display: block; }
     .main-content-wrapper .header-area .amado-nav li a {
       font-size: 14px;
