@@ -16,6 +16,7 @@
     <link rel="icon" href="img/icon image.png">
 
     <!-- Core Style CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
@@ -73,7 +74,7 @@
             <nav class="amado-nav mb-3">
                 <ul>
                     <li><a href="#" class="search-nav"><i class="fa-solid fa-magnifying-glass mx-1"></i>SEARCH</a></li>
-                    <li><a href="#"><i class="fa-regular fa-user mx-1"></i>LOGIN</a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal"><i class="fa-regular fa-user mx-1"></i>LOGIN</a></li>
                     <li class="active"><a href="index.html"><i class="fa-solid fa-house mx-1"></i>Home</a></li>
                     <li><a href="shop_headband.html"><i class="fa-brands fa-shopify mx-1"></i>Shop</a></li>
                 </ul>
@@ -133,10 +134,21 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29991.99367648487!2d96.09941266085762!3d16.84572887290468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194e7ee58f64d%3A0x6e974e7cb775f1a9!2sHlaing%20Township%2C%20Yangon!5e1!3m2!1sen!2smm!4v1684952935147!5m2!1sen!2smm" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                             <h6>Opening Time</h6>
-                            <p>9AM : 6PM</p>
-                            <p>Daily open</p>
+                            <p>9AM : 6PM
+                                <br>Daily open
+                            </p>
+                            <br>
+                            <h6>Contact</h6>
+                            <p>
+                                Email : twentyone@gmail.com <br>
+                                Phone : 09-428273504
+                            </p>
+                            <br>
+                            <h6>Address</h6>
+                            <p>
+                               No.43, Thiri Myaing Street, 13 Ward, Hlaing Township, Yangon
+                            </p>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -194,7 +206,7 @@
                             </nav>
                         </div>
                         
-                        <div class="footer_menu my-5">
+                        <!-- <div class="footer_menu my-5">
                             <nav class="navbar navbar-expand-lg justify-content-end">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent1" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
                                 <div class="collapse navbar-collapse" id="footerNavContent1">
@@ -219,7 +231,7 @@
                                     </div>
                                 </div>
                             </nav>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -238,6 +250,92 @@
     <!-- Active js -->
     <script src="js/active.js"></script>
 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
+<div class="modal fade" id="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-success-subtle p-4">
+                <h5 class="text-center">Please Sign In your TwentyOne account!</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/core-img/sign.webp" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <form action="">
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1" class="form-label h6">Email / Mobile</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1" class="form-label h6">Password</label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-5">
+                                    <input type="submit" class="form-control amado-btn rounded w-50 ms-5" id="exampleFormControlInput1" value="Sign In">
+                                </div>
+                                <div class="mb-4">
+                                    <hr class="loghr">   
+                                 <p>New Customer?</p>
+                                </div>
+                                <div class="mb-4">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#modalCreate"><input type="submit" class="form-control amado-btn rounded w-50 ms-5" id="exampleFormControlInput1" value="Create Account"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalCreate">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-success-subtle p-4">
+                <h5 class="text-center">Please create your TwentyOne account!</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/core-img/account.webp" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <form action="">
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1" class="form-label h6">User Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1" class="form-label h6">Email / Mobile</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1" class="form-label h6">Password</label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1" class="form-label h6">Confirm Password</label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="submit" class="form-control amado-btn rounded w-50 ms-5" id="exampleFormControlInput1" value="Sign In">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
