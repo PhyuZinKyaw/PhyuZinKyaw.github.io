@@ -9,12 +9,12 @@
 @import url(../css/font-awesome.min.css);
 @font-face {
   font-family: 'helveticaneuebold';
-  src: url("../fonts/helvetica_neu_bold-webfont.woff2") format("woff2"), url("../fonts/helvetica_neu_bold-webfont.woff") format("woff");
+  src: url("../fonts/fontawesome-webfont.woff") format("woff2"), url("../fonts/helvetica_neu_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'helveticaneuemedium';
-  src: url("../fonts/helveticaneue_medium-webfont.woff2") format("woff2"), url("../fonts/helveticaneue_medium-webfont.woff") format("woff");
+  src: url("../fonts/fontawesome-webfont.woff") format("woff2"), url("../fonts/helveticaneue_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 /* :: 2.0 Import All CSS */
@@ -1176,17 +1176,18 @@ img {
 .footer_area {
   position: relative;
   z-index: 1;
-  background-color: #252525;
-  padding: 50px 0; }
+  padding: 30px 0; }
   .footer_area .single_widget_area .copywrite {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+    /* color: rgba(255, 255, 255, 0.4); */
     margin-top: 10px; }
     .footer_area .single_widget_area .copywrite a {
       font-size: 12px;
-      color: rgba(255, 255, 255, 0.4); }
+      /* color: rgba(255, 255, 255, 0.4); */
+     }
       .footer_area .single_widget_area .copywrite a:hover {
-        color: #fff; }
+        /* color: #fff;  */
+      }
   .footer_area .single_widget_area .footer_menu {
     position: relative;
     z-index: 1;
@@ -1194,8 +1195,8 @@ img {
     .footer_area .single_widget_area .footer_menu .navbar {
       padding: 0; }
     .footer_area .single_widget_area .footer_menu .navbar-nav .nav-item .nav-link {
-      padding: 10px 30px;
-      color: #fff;
+      padding: 10px 20px;
+      /* color: #fff; */
       text-transform: uppercase;
       font-size: 14px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
